@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WARRIOR! PORTFOLIO</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2 class="logo">DEV<span>W</span></h2>
+    <nav>
+      <a onclick="showPage('home', event)"><img src="home.png"><span>Home</span></a>
+      <a onclick="showPage('web', event)"><img src="web.png"><span>Web</span></a>
+      <a onclick="showPage('minecraft', event)"><img src="minecraft.png"><span>Minecraft</span></a>
+      <a onclick="showPage('discord', event)"><img src="discord.png"><span>Discord</span></a>
+      <a onclick="showPage('contact', event)"><img src="phone.png"><span>Contact</span></a>
+      <a onclick="showPage('social', event)"><img src="book-mark.png"><span>Social</span></a>
+    </nav>
+  </aside>
+
+  <!-- Top Navbar -->
+<header class="topbar">
+  <div class="topbar-left">
+    <span class="name">WARRIOR</span>
+  </div>
+  <button class="theme-btn" onclick="toggleTheme()">
+  <i class="fa-solid fa-moon"></i>
+  <span>Dark</span>
+</button>
+
+</header>
+
+  <!-- Main Content -->
+  <main class="content">
+    <!-- Home -->
+    <section id="home" class="page active">
+      <h1>High-Tech Gaming Developer</h1>
+      <p class="subtitle">Web Developer • Minecraft Server Developer • Discord Server Manager</p>
+      <div class="cards">
+        <div class="glass">⚡ Ultra Fast Web Development</div>
+        <div class="glass">🎮 Minecraft Server Setup</div>
+        <div class="glass">🤖 Discord Bots & Automation</div>
+        <div class="glass">🌌 Minecraft Server Management</div>
+        <div class="glass">🎥 Proffesional Video Editor</div>
+        <div class="glass">📱 Discord Server Setup</div>
+        <div class="glass">💻 Discord Server Mangagement</div>
+        <div class="glass">🖥 Graphics Designer</div>
+      </div>
+    </section>
+
+    <!-- Web -->
+<section id="web" class="page">
+  <h1>Web Development</h1>
+
+  <!-- Highlight -->
+  <div class="highlight glass">
+    <h2>Modern Gaming Websites</h2>
+    <p>High-performance, animated & dark-themed websites for gamers and creators.</p>
+  </div>
+
+  <!-- Skills Cards -->
+  <div class="cards">
+    <div class="glass">⚡ HTML, CSS, JavaScript</div>
+    <div class="glass">🎨 Gaming UI / UX Design</div>
+    <div class="glass">🧊 Glassmorphism & Dark UI</div>
+    <div class="glass">📱 Responsive & Fast Layouts</div>
+  </div>
+
+  <!-- Skill Progress -->
+  <div class="progress">
+    <label>Frontend</label><span style="width:80%"></span>
+    <label>Backend</label><span style="width:50%"></span>
+    <label>UI / UX</label><span style="width:70%"></span>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stat glass"><h3>10+</h3><p>Web Projects</p></div>
+    <div class="stat glass"><h3>100%</h3><p>Dark UI</p></div>
+    <div class="stat glass"><h3>Fast</h3><p>Load Speed</p></div>
+  </div>
+</section>
+<!-- Minecraft -->
+<section id="minecraft" class="page">
+  <h1>Minecraft Servers</h1>
+
+  <!-- Highlight -->
+  <div class="highlight glass">
+    <h2>Professional Minecraft Server Development</h2>
+    <p>Complete setup, optimization & management for lag-free gameplay.</p>
+  </div>
+
+  <!-- Features -->
+  <div class="cards">
+    <div class="glass">🧩 Custom Plugins Setup</div>
+    <div class="glass">🛡 Anti-Cheat & Security</div>
+    <div class="glass">⚙ Lag-Free Optimization</div>
+    <div class="glass">👮 Staff & Player Management</div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stat glass"><h3>24/7</h3><p>Server Support</p></div>
+    <div class="stat glass"><h3>99%</h3><p>Uptime</p></div>
+    <div class="stat glass"><h3>100+</h3><p>Players Managed</p></div>
+  </div>
+</section>
+
+<!-- Discord -->
+<section id="discord" class="page">
+  <h1>Discord Servers</h1>
+
+  <!-- Highlight -->
+  <div class="highlight glass">
+    <h2>Advanced Discord Server Management</h2>
+    <p>Secure, automated & professional Discord communities.</p>
+  </div>
+
+  <!-- Features -->
+  <div class="cards">
+    <div class="glass">🤖 Custom Discord Bots</div>
+    <div class="glass">🔒 Anti-Nuke Protection</div>
+    <div class="glass">⚡ Auto Moderation</div>
+    <div class="glass">📊 Logs & Security Systems</div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stat glass"><h3>50+</h3><p>Bot Commands</p></div>
+    <div class="stat glass"><h3>Secure</h3><p>Anti-Raid</p></div>
+    <div class="stat glass"><h3>Fast</h3><p>Response</p></div>
+  </div>
+</section>
+
+    <!--contact--> 
+    <section id="contact" class="page">
+      <h1>Contact Me</h1>
+      <form class="glass form">
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Email" />
+        <textarea placeholder="Message"></textarea>
+        <button>Send</button>
+      </form>
+    </section>
+
+    <section id="social" class="page">
+  <h1>Social Platforms</h1>
+
+  <!-- Highlight -->
+  <div class="highlight glass">
+    <h2>Connect With Me</h2>
+    <p>You can find me on these platforms for work, updates and collaborations.</p>
+  </div>
+
+  <!-- Join Discord Server Button -->
+<a class="join-discord-btn"
+   href="https://discord.gg/8yQUQxdqqn"
+   target="_blank">
+   <i class="fa-brands fa-discord"></i>
+   Join My Discord Server
+</a>
+
+  <!-- Social Stats -->
+  <div class="stats">
+    <div class="stat glass">
+      <h3>500+</h3>
+      <p>Community Members</p>
+    </div>
+    <div class="stat glass">
+      <h3>Active</h3>
+      <p>Daily Support</p>
+    </div>
+    <div class="stat glass">
+      <h3>Trusted</h3>
+      <p>Gaming Network</p>
+    </div>
+  </div>
+
+  <!-- Social Links -->
+  <div class="socials">
+    <a class="social discord" href="https://discord.com/users/1349202200458694717" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png">
+      Discord
+    </a>
+
+    <a class="social YouTube" href="https://www.youtube.com/@Developer_warrior" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/128/15047/15047410.png">
+      YouTube
+    </a>
+
+    <a class="social instagram" href="https://www.instagram.com/_dev_digital_/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/128/15713/15713420.png">
+      Instagram
+    </a>
+
+    <a class="social github" href="https://github.com/WARRIOR479" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png">
+      GitHub
+    </a>
+  </div>
+</section>
+
+  </main>
+
+  <footer>© 2026 Warrior. All right reserved</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
